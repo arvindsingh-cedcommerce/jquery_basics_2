@@ -97,6 +97,7 @@ $(document).ready(function(){
               $("#alert-message-paragraph").text("");
           }
       }); 
+      
       }
    
    });
