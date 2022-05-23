@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="productlist.js"></script>
+    <link rel="stylesheet" href="productlist.css">
+</head>
+<body>
+    <div>
+        <table class="show-price">
+            <h1>Products</h1>
+            <tr><th>Name</th>
+            <th>Size/Color</th>
+            <th>Price</th>
+            </tr>
+            <tr><td>Duffle Bag</td>
+                <td><select id="select-bag">
+                    <option value="small">Samll</option>
+                    <option value="large">Large</option>
+                    <option value="xl">XL</option>
+                    <option value="bouble xl">Double XL</option>
+                </select></td>
+                <td id="bag-price"></td>
+            </tr>
+            <tr><td>T-Shirts</td>
+                <td><select   id="select-t-shirt">
+                    <option value="light grey">Light Grey</option>
+                    <option value="red">Red</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="light blue">Light Blue</option>
+                </select></td>
+                <td id="t-shirt-price"></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div class="parent-div">
+        <ul class="parent-ul">
+            <li><a href="#">Category</a>
+                <button class="parent-button" >+</button></li>
+            <ul class="child-ul">
+                <li><a href="#">Sub-Category</a>
+                <button class="child-button" >+</button></li>
+            </ul>
+        </ul>
+    </div>
+</body>
+</html>

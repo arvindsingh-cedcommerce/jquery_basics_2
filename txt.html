@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Change Image Source on Click</title>
+<style>
+    .card{
+        margin: 20px;
+       
+    }
+    .img-class {
+        height: 300px;
+        width: 400px;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("img").click(function(){
+        // Change src attribute of image
+        $(this).attr("src", "beach2.jpeg");
+    });    
+});
+</script>
+</head>
+<body>
+    <div class="card">
+        <img src="beach1.jpeg" alt="Poker Card" class="img-class">
+    </div>
+</body>
+</html>

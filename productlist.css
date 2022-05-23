@@ -1,0 +1,14 @@
+
+table tr td {
+    border: 1px solid gray;
+   padding: 1vh 20vh 1vh 1vh;
+}
+table tr th{
+    padding: 1vh 20vh 1vh 1vh;
+    border: 1px solid gray;  
+    text-align: left;
+}
+table  {
+    border-collapse: collapse;
+
+}
