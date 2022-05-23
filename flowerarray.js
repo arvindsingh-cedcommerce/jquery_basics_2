@@ -1,5 +1,4 @@
 
-
 $(document).ready(function(){
     const flowerArray = ['Rose', 'Tulip', 'Orchird', 'Sunflower', 'Poppy', 'Lotus','Peruvian Lily','Chrysanthemum','Gladiolus','Anemone','Daffodil','Blossom','Calla','Cecelia','Celosia','Chrysanthemum',' Clover','Coral','Dahlia','Daisy',' Florentina',' Flora','Ginger','Freesia','Harmony','Hazel','Heather','Ione','Iris','Ivy','Ixia','Jacinta','Jasmine','Jewel','Julia','Kahili','Kalina','Lavender','Lily','Magnolia','Nanala','Olearia','Zinnia','Wisteria','Azami','Bourbon'];
    
@@ -10,7 +9,7 @@ $(document).ready(function(){
         var len = value.length;
         if($(this).val() != ""){
         for(let i = 0 ; i < flowerArray.length ; i++){
-          if(value == flowerArray[i].slice(0,len).toUpperCase()){
+           if(value == flowerArray[i].slice(0,len).toUpperCase()){
              newArray.push(flowerArray[i]);
           }
         }}
