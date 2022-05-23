@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jquery-filters-selectors.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="filter1">
+        
+            <select name="select-os" class="select-os">
+                <option value="all">Filter By Operating System</option>
+                <option value="O">O</option>
+                <option value="W">W</option>
+                <option value="Y">Y</option>
+                <option value="Q">Q</option>
+            </select>
+      
+            <select name="select-brand" class="select-brand">
+                <option value="all">Filter By Brand</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+       
+        </div>
+    <br>
+    <div id="container"> </div><br>
+    <div>
+        <p id="alert-message-paragraph"></p>
+        <input type="text" id="search-input" placeholder="product name or id">
+        <button id="search-button">Search</button>
+    </div>
+    <script src="jquery-filters-selectors.js"></script>
+</body>
+</html>
