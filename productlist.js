@@ -31,7 +31,7 @@ $(document).ready(function(){
       else if($('#select-t-shirt').val() == 'light blue') {
         price = 1000;
       }
-    
+     
       $('#t-shirt-price').text(price);
     }));
 
@@ -41,12 +41,15 @@ $(document).ready(function(){
 
     $(".parent-div").on("click","button",function()
     {
-        new_line = $(this).attr('class');
-        if(new_line == 'parent-button') {
-            $('.parent-ul').append('<li><a href="#">Category</a><button class="parent-button">+</button></li>');
-          }
-        else if(new_line == 'child-button') {
-            $('.child-ul').append('<li><a href="#">Sub-Category</a><button class="child-button">+</button></li>');
-         }
+        
+        $Class = $(this).parent().parent().attr('class');
+
+        if($Class == 'parent-ul1'){
+            $(this).parent().parent().append('<ul class="parent-ul1"><li><a href="#">T-Shirt</a><button class="child-button">+</button></li></ul>');
+        }
+
+        else if($Class == 'parent-ul2'){
+          $(this).parent().parent().append('<ul class="parent-ul2"><li><a href="#">Mobiles</a><button class="child-button">+</button></li></ul>');
+      }
     });
  }); 
